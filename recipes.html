@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traditional Culinary Recipes | Swaddhara Official</title>
+  <meta name="description" content="Discover authentic Bengali and Indian recipes cooked with Swaddhara pure spices. Kosha Mangsho, Shorshe Ilish, Dum Aloo, Cholar Dal, and more.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#B91C1C',
+              crimson: '#991B1B',
+              dark: '#7F1D1D',
+              gold: '#D97706',
+              amber: '#F59E0B',
+              green: '#15803D',
+              brown: '#78350F',
+              cream: '#FFFDF9',
+              warm: '#FDFBF7',
+              surface: '#F8F4EC',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-brand-warm text-stone-800 antialiased pb-20 lg:pb-0">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-brand-dark via-brand-red to-brand-crimson text-white text-xs py-2 px-4 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 font-medium tracking-wide">
+        <span class="inline-flex items-center justify-center w-4 h-4 rounded-full bg-white/20 text-[10px]">🌿</span>
+        <span>100% Pure, Natural & Organic Spices | <strong>The Timeless Taste of Tradition</strong></span>
+      </div>
+      <div class="flex items-center gap-4 text-white/90">
+        <a href="mailto:swaddharamasala@gmail.com" class="hover:text-amber-200 transition-colors flex items-center gap-1.5">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          <span>swaddharamasala@gmail.com</span>
+        </a>
+        <span class="hidden md:inline">|</span>
+        <a href="dealership.html" class="hidden md:inline-flex items-center gap-1 font-semibold text-amber-200 hover:text-white transition-colors">
+          <i data-lucide="store" class="w-3.5 h-3.5"></i> Dealership & Wholesale
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-900/10 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <img src="assets/images/logo.png" alt="Swaddhara Spices Logo" class="h-12 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="index.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="home" class="w-4 h-4"></i> Home
+        </a>
+        <a href="products.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="package" class="w-4 h-4"></i> Our Spices
+        </a>
+        <a href="quality.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="award" class="w-4 h-4"></i> Quality & Purity
+        </a>
+        <a href="recipes.html" class="text-brand-red font-bold flex items-center gap-1 transition-colors">
+          <i data-lucide="utensils" class="w-4 h-4"></i> Recipes
+        </a>
+        <a href="about.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="shield-check" class="w-4 h-4"></i> Our Story
+        </a>
+        <a href="dealership.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="store" class="w-4 h-4"></i> Dealership
+        </a>
+        <a href="contact.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-4 h-4"></i> Contact
+        </a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="dealership.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-brand-red to-brand-crimson hover:from-brand-crimson hover:to-brand-dark transition-all duration-300 shadow-md shadow-red-900/20 hover:scale-[1.02]">
+          <i data-lucide="sparkles" class="w-4 h-4 mr-1.5"></i>
+          Wholesale Inquiries
+        </a>
+      </div>
+
+      <div class="flex items-center lg:hidden">
+        <button id="mobileMenuBtn" class="p-2.5 rounded-xl text-stone-700 hover:bg-stone-100 hover:text-brand-red transition-colors">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileDrawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300">
+    <div class="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-2xl p-6 flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300" id="drawerContent">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-stone-100">
+          <img src="assets/images/logo.png" alt="Swaddhara" class="h-10 w-auto object-contain">
+          <button id="closeDrawerBtn" class="p-2 rounded-lg text-stone-500 hover:bg-stone-100">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+        <div class="py-6 space-y-2 font-semibold text-stone-700">
+          <a href="index.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="home" class="w-5 h-5"></i> Home
+          </a>
+          <a href="products.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="package" class="w-5 h-5 text-amber-600"></i> Our Spices Range
+          </a>
+          <a href="quality.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="award" class="w-5 h-5 text-emerald-600"></i> Quality & 5 Pillars
+          </a>
+          <a href="recipes.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-brand-red bg-red-50">
+            <i data-lucide="utensils" class="w-5 h-5 text-brand-red"></i> Traditional Recipes
+          </a>
+          <a href="about.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="shield-check" class="w-5 h-5 text-stone-600"></i> Our Story & Heritage
+          </a>
+          <a href="dealership.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="store" class="w-5 h-5 text-brand-red"></i> Dealership & Wholesale
+          </a>
+          <a href="contact.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="phone" class="w-5 h-5 text-blue-600"></i> Contact Us
+          </a>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-stone-100">
+        <a href="dealership.html" class="drawer-link w-full inline-flex items-center justify-center py-3 px-4 rounded-xl text-sm font-bold text-white bg-brand-red hover:bg-brand-crimson">
+          Dealership Inquiry
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Banner -->
+  <section class="py-14 sm:py-20 bg-gradient-to-b from-amber-100/50 via-brand-warm to-brand-surface border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-orange-100 text-orange-900">
+        <i data-lucide="flame" class="w-4 h-4 text-brand-red"></i>
+        <span>Cook With Swaddhara</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black text-stone-900 tracking-tight">
+        Traditional Culinary Inspirations
+      </h1>
+      <p class="text-stone-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+        Discover how the aromatic potency, natural colors, and authentic purity of Swaddhara spices transform simple ingredients into celebrated heritage feasts.
+      </p>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <!-- Recipe 1: Kosha Mangsho -->
+      <div class="bg-brand-warm rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 bg-gradient-to-tr from-brand-red via-brand-crimson to-brand-dark rounded-2xl p-8 text-white flex flex-col justify-between aspect-[4/3] relative overflow-hidden shadow-md">
+          <div class="space-y-2">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur w-fit inline-block">
+              Signature Sunday Classic
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-black">Bengali Kosha Mangsho</h3>
+            <p class="text-xs text-amber-200 font-bold font-bengali">ঐতিহ্যবাহী খাসির কষা মাংস</p>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-center text-xs pt-4 border-t border-white/20">
+            <div>
+              <p class="font-bold text-white">Prep</p>
+              <p class="text-[11px] text-white/80">30 Min</p>
+            </div>
+            <div>
+              <p class="font-bold text-white">Cook</p>
+              <p class="text-[11px] text-white/80">60 Min</p>
+            </div>
+            <div>
+              <p class="font-bold text-white">Serves</p>
+              <p class="text-[11px] text-white/80">4-5</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4">
+          <div class="space-y-1">
+            <h4 class="text-xl font-black text-stone-900">Slow-Cooked Rich Mutton Gravy</h4>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              The hallmark of true Bengali Kosha Mangsho is its dark, glistening, aromatic gravy that clings lovingly to every succulent tender meat piece.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200/80 space-y-2">
+            <p class="text-xs font-bold text-amber-900 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-4 h-4 text-brand-red"></i> Swaddhara Spices Secret:
+            </p>
+            <ul class="text-xs text-stone-700 space-y-1">
+              <li>• <strong>Swaddhara Kashmiri Mirch (2 tbsp):</strong> Gives that signature dark red-brown glaze without overpowering heat.</li>
+              <li>• <strong>Swaddhara Jeera Powder (1 tbsp):</strong> Adds deep, roasted, rustic aroma to the slow caramelization.</li>
+              <li>• <strong>Swaddhara Turmeric & Red Chilli:</strong> For balanced pungency and marination base.</li>
+            </ul>
+          </div>
+
+          <div class="space-y-2 text-xs text-stone-700">
+            <p class="font-bold text-stone-900">Chef's Method:</p>
+            <p>Marinate mutton with mustard oil, yogurt, Swaddhara Turmeric, and Red Chilli for 2 hours. In a heavy iron kadai, fry sliced onions till golden brown. Add ginger-garlic paste and Swaddhara Kashmiri Mirch & Jeera powder dissolved in warm water. Slow roast (koshano) till oil separates cleanly.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe 2: Shorshe Ilish -->
+      <div class="bg-brand-warm rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 bg-gradient-to-tr from-amber-600 via-amber-700 to-amber-900 rounded-2xl p-8 text-white flex flex-col justify-between aspect-[4/3] relative overflow-hidden shadow-md">
+          <div class="space-y-2">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur w-fit inline-block">
+              Monsoon Royal Heritage
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-black">Shorshe-Holud Ilish</h3>
+            <p class="text-xs text-amber-100 font-bold font-bengali">সর্ষে-হলুদে খাঁটি ইলিশের ঝাল</p>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-center text-xs pt-4 border-t border-white/20">
+            <div>
+              <p class="font-bold text-white">Prep</p>
+              <p class="text-[11px] text-white/80">15 Min</p>
+            </div>
+            <div>
+              <p class="font-bold text-white">Cook</p>
+              <p class="text-[11px] text-white/80">20 Min</p>
+            </div>
+            <div>
+              <p class="font-bold text-white">Serves</p>
+              <p class="text-[11px] text-white/80">4</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4">
+          <div class="space-y-1">
+            <h4 class="text-xl font-black text-stone-900">Hilsa in Golden Mustard Gravy</h4>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Nothing matches the fragrant royal taste of pristine Hilsa fish cooked gently with cold-pressed mustard paste and pure golden turmeric.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200/80 space-y-2">
+            <p class="text-xs font-bold text-amber-900 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-4 h-4 text-amber-700"></i> Swaddhara Spices Secret:
+            </p>
+            <ul class="text-xs text-stone-700 space-y-1">
+              <li>• <strong>Swaddhara Turmeric Powder (1.5 tsp):</strong> High curcumin creates the brilliant radiant sunshine hue without bitterness.</li>
+              <li>• <strong>Swaddhara Red Chilli Powder (1/2 tsp):</strong> Balances the mustard pungency with clean warmth.</li>
+            </ul>
+          </div>
+
+          <div class="space-y-2 text-xs text-stone-700">
+            <p class="font-bold text-stone-900">Chef's Method:</p>
+            <p>Rub fresh Ilish steaks with Swaddhara Turmeric and sea salt. Mix ground black & yellow mustard with water and a pinch of salt. Temper pure mustard oil with kalonji and slit green chillies. Pour the mustard mixture and slide in fish. Simmer gently for 8 minutes to keep the fish buttery soft.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe 3: Dum Aloo -->
+      <div class="bg-brand-warm rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-sm grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 bg-gradient-to-tr from-emerald-700 via-emerald-800 to-stone-900 rounded-2xl p-8 text-white flex flex-col justify-between aspect-[4/3] relative overflow-hidden shadow-md">
+          <div class="space-y-2">
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur w-fit inline-block">
+              Festive Vegetarian Feast
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-black">Niramish Aloo Dum</h3>
+            <p class="text-xs text-emerald-100 font-bold font-bengali">নিরামিষ আলুর দম ও কড়াইশুঁটির কচুরি</p>
+          </div>
+          <div class="grid grid-cols-3 gap-2 text-center text-xs pt-4 border-t border-white/20">
+            <div>
+              <p class="font-bold text-white">Prep</p>
+              <p class="text-[11px] text-white/80">20 Min</p>
+            </div>
+            <div>
+              <p class="font-bold text-white">Cook</p>
+              <p class="text-[11px] text-white/80">35 Min</p>
+            </div>
+            <div>
+              <p class="font-bold text-white">Serves</p>
+              <p class="text-[11px] text-white/80">4</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-4">
+          <div class="space-y-1">
+            <h4 class="text-xl font-black text-stone-900">Sweet & Spicy Baby Potato Curry</h4>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              No onion, no garlic, yet overflowing with deep spice aroma and irresistible richness—the crowning dish of Bengali winter pujas and celebrations.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200/80 space-y-2">
+            <p class="text-xs font-bold text-amber-900 uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-4 h-4 text-emerald-700"></i> Swaddhara Spices Secret:
+            </p>
+            <ul class="text-xs text-stone-700 space-y-1">
+              <li>• <strong>Swaddhara Coriander Powder (2 tsp):</strong> Brings cooling herbal citrus fragrance to thicken the tomato-ginger base.</li>
+              <li>• <strong>Swaddhara Kashmiri Mirch (1.5 tsp):</strong> Provides the festive vermilion color.</li>
+              <li>• <strong>Swaddhara Jeera Powder (1 tsp):</strong> Roasted earthy notes finish the curry.</li>
+            </ul>
+          </div>
+
+          <div class="space-y-2 text-xs text-stone-700">
+            <p class="font-bold text-stone-900">Chef's Method:</p>
+            <p>Boil and prick baby potatoes, then golden-fry with a pinch of turmeric. In ghee, temper cumin seeds, bay leaf, and whole garam masala. Sauté tomato-ginger paste with Swaddhara Coriander, Kashmiri Mirch, and Jeera powder until oil leaves the sides. Add potatoes and simmer with warm water on dum for 15 minutes.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Mobile Floating App Bottom Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur-md border-t border-stone-200 py-2 px-6 flex items-center justify-around lg:hidden shadow-lg">
+    <a href="index.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="home" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Home</span>
+    </a>
+    <a href="products.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="package" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Spices</span>
+    </a>
+    <a href="quality.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="award" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Quality</span>
+    </a>
+    <a href="recipes.html" class="flex flex-col items-center gap-1 text-brand-red">
+      <i data-lucide="utensils" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Recipes</span>
+    </a>
+    <a href="dealership.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="store" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Dealers</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-400 pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        <div class="lg:col-span-2 space-y-4">
+          <img src="assets/images/logo.png" alt="Swaddhara Spices" class="h-14 w-auto brightness-0 invert object-contain">
+          <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+            Swaddhara (স্বাদধারা) - The Timeless Taste of Tradition. 100% pure, unadulterated spices crafted with cold-ground technology and aroma-lock hygiene packaging.
+          </p>
+        </div>
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider text-sm">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Our Spices Portfolio</a></li>
+            <li><a href="quality.html" class="hover:text-white transition-colors">Quality & 5 Pillars</a></li>
+            <li><a href="recipes.html" class="hover:text-white transition-colors">Traditional Recipes</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">Our Story & Heritage</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider text-sm">Spices Range</h4>
+          <ul class="space-y-2">
+            <li><a href="products.html" class="hover:text-white transition-colors">Turmeric Powder (হলুদ গুঁড়ো)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Jeera Powder (জিরে গুঁড়ো)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Kashmiri Mirch (কাশ্মীরি লঙ্কা)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Red Chilli Powder (লঙ্কা গুঁড়ো)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Coriander Powder (ধনে গুঁড়ো)</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider text-sm">Business & Help</h4>
+          <div class="space-y-2.5 text-stone-400">
+            <p class="flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4 text-brand-red"></i>
+              <span>swaddhara.in</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-red"></i>
+              <a href="mailto:swaddharamasala@gmail.com" class="hover:text-white transition-colors">swaddharamasala@gmail.com</a>
+            </p>
+            <div class="pt-2">
+              <a href="dealership.html" class="inline-block py-2 px-3 rounded-lg bg-stone-800 text-amber-200 hover:bg-brand-red hover:text-white transition-colors font-bold">
+                Dealership Application
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+        <p>&copy; <span class="current-year"></span> Swaddhara. All Rights Reserved.</p>
+        <p class="flex items-center gap-1">
+          <span>The Timeless Taste of Tradition</span> • <span>Pure Spices, Pure Goodness</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

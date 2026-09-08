@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality & Purity Standards | Swaddhara Official</title>
+  <meta name="description" content="Discover Swaddhara's uncompromising quality standards, 5 pillars of purity, cold-ground processing, and multi-layer aroma-lock packaging.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#B91C1C',
+              crimson: '#991B1B',
+              dark: '#7F1D1D',
+              gold: '#D97706',
+              amber: '#F59E0B',
+              green: '#15803D',
+              brown: '#78350F',
+              cream: '#FFFDF9',
+              warm: '#FDFBF7',
+              surface: '#F8F4EC',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-brand-warm text-stone-800 antialiased pb-20 lg:pb-0">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-brand-dark via-brand-red to-brand-crimson text-white text-xs py-2 px-4 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 font-medium tracking-wide">
+        <span class="inline-flex items-center justify-center w-4 h-4 rounded-full bg-white/20 text-[10px]">🌿</span>
+        <span>100% Pure, Natural & Organic Spices | <strong>The Timeless Taste of Tradition</strong></span>
+      </div>
+      <div class="flex items-center gap-4 text-white/90">
+        <a href="mailto:swaddharamasala@gmail.com" class="hover:text-amber-200 transition-colors flex items-center gap-1.5">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+          <span>swaddharamasala@gmail.com</span>
+        </a>
+        <span class="hidden md:inline">|</span>
+        <a href="dealership.html" class="hidden md:inline-flex items-center gap-1 font-semibold text-amber-200 hover:text-white transition-colors">
+          <i data-lucide="store" class="w-3.5 h-3.5"></i> Dealership & Wholesale
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-900/10 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <img src="assets/images/logo.png" alt="Swaddhara Spices Logo" class="h-12 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-stone-700">
+        <a href="index.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="home" class="w-4 h-4"></i> Home
+        </a>
+        <a href="products.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="package" class="w-4 h-4"></i> Our Spices
+        </a>
+        <a href="quality.html" class="text-brand-red font-bold flex items-center gap-1 transition-colors">
+          <i data-lucide="award" class="w-4 h-4"></i> Quality & Purity
+        </a>
+        <a href="recipes.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="utensils" class="w-4 h-4"></i> Recipes
+        </a>
+        <a href="about.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="shield-check" class="w-4 h-4"></i> Our Story
+        </a>
+        <a href="dealership.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="store" class="w-4 h-4"></i> Dealership
+        </a>
+        <a href="contact.html" class="hover:text-brand-red flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-4 h-4"></i> Contact
+        </a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="dealership.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-brand-red to-brand-crimson hover:from-brand-crimson hover:to-brand-dark transition-all duration-300 shadow-md shadow-red-900/20 hover:scale-[1.02]">
+          <i data-lucide="sparkles" class="w-4 h-4 mr-1.5"></i>
+          Partner With Us
+        </a>
+      </div>
+
+      <div class="flex items-center lg:hidden">
+        <button id="mobileMenuBtn" class="p-2.5 rounded-xl text-stone-700 hover:bg-stone-100 hover:text-brand-red transition-colors">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileDrawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300">
+    <div class="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-2xl p-6 flex flex-col justify-between overflow-y-auto transform translate-x-full transition-transform duration-300" id="drawerContent">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-stone-100">
+          <img src="assets/images/logo.png" alt="Swaddhara" class="h-10 w-auto object-contain">
+          <button id="closeDrawerBtn" class="p-2 rounded-lg text-stone-500 hover:bg-stone-100">
+            <i data-lucide="x" class="w-6 h-6"></i>
+          </button>
+        </div>
+        <div class="py-6 space-y-2 font-semibold text-stone-700">
+          <a href="index.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="home" class="w-5 h-5"></i> Home
+          </a>
+          <a href="products.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="package" class="w-5 h-5 text-amber-600"></i> Our Spices Range
+          </a>
+          <a href="quality.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-brand-red bg-red-50">
+            <i data-lucide="award" class="w-5 h-5 text-brand-red"></i> Quality & 5 Pillars
+          </a>
+          <a href="recipes.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="utensils" class="w-5 h-5 text-orange-600"></i> Traditional Recipes
+          </a>
+          <a href="about.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="shield-check" class="w-5 h-5 text-stone-600"></i> Our Story & Heritage
+          </a>
+          <a href="dealership.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="store" class="w-5 h-5 text-brand-red"></i> Dealership & Wholesale
+          </a>
+          <a href="contact.html" class="drawer-link flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-stone-50">
+            <i data-lucide="phone" class="w-5 h-5 text-blue-600"></i> Contact Us
+          </a>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-stone-100">
+        <a href="dealership.html" class="drawer-link w-full inline-flex items-center justify-center py-3 px-4 rounded-xl text-sm font-bold text-white bg-brand-red hover:bg-brand-crimson">
+          Dealership Inquiry
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <section class="py-14 sm:py-20 bg-gradient-to-b from-amber-100/50 via-brand-warm to-brand-surface border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800">
+        <i data-lucide="shield-check" class="w-4 h-4"></i>
+        <span>100% Purity & Safety Certified</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black text-stone-900 tracking-tight">
+        The 5 Pillars of Swaddhara Purity
+      </h1>
+      <p class="text-stone-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+        From direct agricultural sourcing to modern cold-ground processing, discover how Swaddhara guarantees untouched purity and robust natural flavor in every pinch.
+      </p>
+    </div>
+  </section>
+
+  <!-- 5 Pillars Detailed -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- 1. Authentic Taste -->
+        <div class="bg-brand-warm rounded-3xl p-8 border border-stone-200 shadow-sm hover:shadow-md transition-all space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-red-100 text-brand-red flex items-center justify-center">
+            <i data-lucide="heart" class="w-7 h-7"></i>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-brand-red">Pillar 01</span>
+            <h3 class="text-xl font-bold text-stone-900">Authentic Taste</h3>
+            <p class="text-xs font-semibold text-stone-600 font-bengali">খাঁটি স্বাদ</p>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            True Indian food derives its magic not from heavy artificial additives, but from the rich synergy of wholesome, slow-roasted spices. Swaddhara preserves the time-honored authentic recipes so your dishes carry memories of genuine home cooking.
+          </p>
+        </div>
+
+        <!-- 2. Traditional Goodness -->
+        <div class="bg-brand-warm rounded-3xl p-8 border border-stone-200 shadow-sm hover:shadow-md transition-all space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Pillar 02</span>
+            <h3 class="text-xl font-bold text-stone-900">Traditional Goodness</h3>
+            <p class="text-xs font-semibold text-stone-600 font-bengali">ঐতিহ্যবাহী গুণমান</p>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Traditional Indian grinding relied on hand stone-mortars that kept grinding temperatures cool. At Swaddhara, we mirror this heritage with low-temperature cold-milling that locks in natural therapeutic volatile oils.
+          </p>
+        </div>
+
+        <!-- 3. Natural Ingredients -->
+        <div class="bg-brand-warm rounded-3xl p-8 border border-stone-200 shadow-sm hover:shadow-md transition-all space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
+            <i data-lucide="leaf" class="w-7 h-7"></i>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700">Pillar 03</span>
+            <h3 class="text-xl font-bold text-stone-900">Natural Ingredients</h3>
+            <p class="text-xs font-semibold text-stone-600 font-bengali">প্রাকৃতিক উপাদান</p>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Zero chemical colorings, synthetic dyes, starch fillers, or anti-caking additives. Every batch is 100% pure dried spice rhizomes, seeds, and pods harvested from certified organic and chemical-free farms.
+          </p>
+        </div>
+
+        <!-- 4. Trusted Quality -->
+        <div class="bg-brand-warm rounded-3xl p-8 border border-stone-200 shadow-sm hover:shadow-md transition-all space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-800 flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">Pillar 04</span>
+            <h3 class="text-xl font-bold text-stone-900">Trusted Quality</h3>
+            <p class="text-xs font-semibold text-stone-600 font-bengali">বিশ্বস্ত মান নিয়ন্ত্রণ</p>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Continuous testing across moisture, volatile oil levels, capsaicin, and curcumin concentration ensures standard gourmet excellence from farm to package.
+          </p>
+        </div>
+
+        <!-- 5. For Every Home -->
+        <div class="bg-brand-warm rounded-3xl p-8 border border-stone-200 shadow-sm hover:shadow-md transition-all space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-800 flex items-center justify-center">
+            <i data-lucide="home" class="w-7 h-7"></i>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-purple-700">Pillar 05</span>
+            <h3 class="text-xl font-bold text-stone-900">Goodness for Every Home</h3>
+            <p class="text-xs font-semibold text-stone-600 font-bengali">প্রতিটি গৃহিণীর বিশ্বস্ত সঙ্গী</p>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            We believe pure, hygienic, adulteration-free spices should not be a luxury. Swaddhara brings premier international quality to everyday Indian households at fair, transparent prices.
+          </p>
+        </div>
+
+        <!-- 6. Aroma-Lock Packaging -->
+        <div class="bg-brand-warm rounded-3xl p-8 border border-stone-200 shadow-sm hover:shadow-md transition-all space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-800 flex items-center justify-center">
+            <i data-lucide="package-check" class="w-7 h-7"></i>
+          </div>
+          <div class="space-y-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-orange-700">Packaging Technology</span>
+            <h3 class="text-xl font-bold text-stone-900">Multi-Layer Aroma-Lock</h3>
+            <p class="text-xs font-semibold text-stone-600 font-bengali">অ্যারোমা-লক প্যাক</p>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Triple-barrier nitrogen-sealed packaging shields volatile aromas and essential oils against ultraviolet sunlight, humidity, and airborne oxygen, keeping freshness locked for up to 12 months.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process Breakdown Section -->
+  <section class="py-16 sm:py-24 bg-brand-surface border-y border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-brand-red font-bold">The Journey</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight mt-1">
+          4-Stage Processing Pipeline
+        </h2>
+        <p class="text-stone-600 mt-3 text-sm">
+          Precision, cleanliness, and safety at every turn.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm flex flex-col md:flex-row items-center gap-6">
+          <div class="w-16 h-16 rounded-2xl bg-brand-red text-white flex-shrink-0 flex items-center justify-center font-black text-2xl shadow-md">
+            01
+          </div>
+          <div class="space-y-1 text-center md:text-left">
+            <h3 class="text-lg font-bold text-stone-900">Direct Farm Sourcing & Seed Selection</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              We build long-term grower partnerships directly with regional farming cooperatives in Rajasthan, Gujarat, Tamil Nadu, and Kashmir. Only uniform, unblemished seeds and rhizomes with optimal oil content are selected.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm flex flex-col md:flex-row items-center gap-6">
+          <div class="w-16 h-16 rounded-2xl bg-amber-600 text-white flex-shrink-0 flex items-center justify-center font-black text-2xl shadow-md">
+            02
+          </div>
+          <div class="space-y-1 text-center md:text-left">
+            <h3 class="text-lg font-bold text-stone-900">Optical Sorting & Multi-Stage De-Stalking</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Raw chillies, cumin, and coriander pass through pneumatic dust aspirators and high-precision color sorters. Foreign particles, stones, and hollow seeds are thoroughly eliminated with zero manual contamination.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm flex flex-col md:flex-row items-center gap-6">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-600 text-white flex-shrink-0 flex items-center justify-center font-black text-2xl shadow-md">
+            03
+          </div>
+          <div class="space-y-1 text-center md:text-left">
+            <h3 class="text-lg font-bold text-stone-900">Temperature-Controlled Cold-Grinding</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Conventional industrial grinding generates extreme friction heat that vaporizes delicate spice aromas and turns powders bitter. Swaddhara utilizes low-RPM cold-grinding that keeps temperatures strictly controlled, retaining all therapeutic compounds.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm flex flex-col md:flex-row items-center gap-6">
+          <div class="w-16 h-16 rounded-2xl bg-blue-600 text-white flex-shrink-0 flex items-center justify-center font-black text-2xl shadow-md">
+            04
+          </div>
+          <div class="space-y-1 text-center md:text-left">
+            <h3 class="text-lg font-bold text-stone-900">Automated Aroma-Lock Nitrogen Flushing & Sealing</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Immediately upon grinding, the powder is packed in automated multi-layer foil laminates untouched by human hands. Freshness is locked in from the mill straight to your kitchen pan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest text-brand-red font-bold">The Difference</span>
+        <h2 class="text-3xl font-black text-stone-900 tracking-tight mt-1">
+          Swaddhara Spices vs Market Loose Spices
+        </h2>
+      </div>
+
+      <div class="overflow-x-auto rounded-3xl border border-stone-200 shadow-sm">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead class="bg-stone-100 text-stone-700 uppercase font-bold text-[11px] tracking-wider">
+            <tr>
+              <th class="p-4 sm:p-6">Feature / Parameter</th>
+              <th class="p-4 sm:p-6 text-brand-red bg-red-50/70">Swaddhara Pure Spices</th>
+              <th class="p-4 sm:p-6 text-stone-500">Unbranded Market Spices</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-stone-200 font-medium">
+            <tr>
+              <td class="p-4 sm:p-6 font-bold text-stone-800">Artificial Colors (Sudan dye, Metanil yellow)</td>
+              <td class="p-4 sm:p-6 text-emerald-700 font-bold bg-red-50/30 flex items-center gap-1.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i> 100% Free (Zero Color Added)
+              </td>
+              <td class="p-4 sm:p-6 text-rose-600 font-semibold">Commonly contaminated for visual appeal</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-6 font-bold text-stone-800">Grinding Temperature</td>
+              <td class="p-4 sm:p-6 text-emerald-700 font-bold bg-red-50/30">
+                Slow Cold-Milling (Aroma Intact)
+              </td>
+              <td class="p-4 sm:p-6 text-stone-500">High friction heat burns volatile oils</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-6 font-bold text-stone-800">Starch, Sawdust or Husk Fillers</td>
+              <td class="p-4 sm:p-6 text-emerald-700 font-bold bg-red-50/30 flex items-center gap-1.5">
+                <i data-lucide="check-circle" class="w-4 h-4"></i> 0% (Single Pure Ingredient)
+              </td>
+              <td class="p-4 sm:p-6 text-rose-600 font-semibold">Frequently bulked with husks and starches</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-6 font-bold text-stone-800">Aroma Retention</td>
+              <td class="p-4 sm:p-6 text-emerald-700 font-bold bg-red-50/30">
+                Triple-Layer Sealed Foil (12 Mo.)
+              </td>
+              <td class="p-4 sm:p-6 text-stone-500">Exposed open sacks lose fragrance in weeks</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Mobile Floating App Bottom Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-30 bg-white/95 backdrop-blur-md border-t border-stone-200 py-2 px-6 flex items-center justify-around lg:hidden shadow-lg">
+    <a href="index.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="home" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Home</span>
+    </a>
+    <a href="products.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="package" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Spices</span>
+    </a>
+    <a href="quality.html" class="flex flex-col items-center gap-1 text-brand-red">
+      <i data-lucide="award" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Quality</span>
+    </a>
+    <a href="recipes.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="utensils" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Recipes</span>
+    </a>
+    <a href="dealership.html" class="flex flex-col items-center gap-1 text-stone-600 hover:text-brand-red">
+      <i data-lucide="store" class="w-5 h-5"></i>
+      <span class="text-[10px] font-bold">Dealers</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-400 pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        <div class="lg:col-span-2 space-y-4">
+          <img src="assets/images/logo.png" alt="Swaddhara Spices" class="h-14 w-auto brightness-0 invert object-contain">
+          <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+            Swaddhara (স্বাদধারা) - The Timeless Taste of Tradition. 100% pure, unadulterated spices crafted with cold-ground technology and aroma-lock hygiene packaging.
+          </p>
+        </div>
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider text-sm">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Our Spices Portfolio</a></li>
+            <li><a href="quality.html" class="hover:text-white transition-colors">Quality & 5 Pillars</a></li>
+            <li><a href="recipes.html" class="hover:text-white transition-colors">Traditional Recipes</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">Our Story & Heritage</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider text-sm">Spices Range</h4>
+          <ul class="space-y-2">
+            <li><a href="products.html" class="hover:text-white transition-colors">Turmeric Powder (হলুদ গুঁড়ো)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Jeera Powder (জিরে গুঁড়ো)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Kashmiri Mirch (কাশ্মীরি লঙ্কা)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Red Chilli Powder (লঙ্কা গুঁড়ো)</a></li>
+            <li><a href="products.html" class="hover:text-white transition-colors">Coriander Powder (ধনে গুঁড়ো)</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3 text-xs">
+          <h4 class="font-bold text-white uppercase tracking-wider text-sm">Business & Help</h4>
+          <div class="space-y-2.5 text-stone-400">
+            <p class="flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4 text-brand-red"></i>
+              <span>swaddhara.in</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-red"></i>
+              <a href="mailto:swaddharamasala@gmail.com" class="hover:text-white transition-colors">swaddharamasala@gmail.com</a>
+            </p>
+            <div class="pt-2">
+              <a href="dealership.html" class="inline-block py-2 px-3 rounded-lg bg-stone-800 text-amber-200 hover:bg-brand-red hover:text-white transition-colors font-bold">
+                Dealership Application
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+        <p>&copy; <span class="current-year"></span> Swaddhara. All Rights Reserved.</p>
+        <p class="flex items-center gap-1">
+          <span>The Timeless Taste of Tradition</span> • <span>Pure Spices, Pure Goodness</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
