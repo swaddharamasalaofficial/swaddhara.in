@@ -73,6 +73,20 @@ const swaddharaProducts = {
     packSizes: ["50g", "100g", "200g", "500g"],
     pairings: "Sambar, Fish Jhol, Aloo Posto, Mixed Veg, Stews",
     accentColor: "emerald"
+  },
+  garam: {
+    id: "garam",
+    titleEn: "Garam Masala",
+    titleBn: "গরম মসলা",
+    category: "ground",
+    image: "assets/images/products/Garam.jpg",
+    badge: "Aromatic Spice Blend • Freshly Ground",
+    desc: "Swaddhara Garam Masala is a fragrant blend of premium whole spices, freshly ground to preserve its warmth, depth, and rich finishing aroma for curries, biryani, vegetables, and everyday cooking.",
+    ingredients: "Premium Whole Spices",
+    nutrition: "Naturally aromatic, freshly ground, zero artificial additives",
+    packSizes: ["50g", "100g", "200g", "500g"],
+    pairings: "Curries, Biryani, Korma, Vegetables, Dal, Snacks",
+    accentColor: "orange"
   }
 };
 
